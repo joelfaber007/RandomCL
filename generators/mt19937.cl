@@ -5,7 +5,6 @@ Implements Mersenne twister generator.
 
 M. Matsumoto, T. Nishimura, Mersenne twister: a 623-dimensionally equidistributed uniform pseudo-random number generator, ACM Transactions on Modeling and Computer Simulation (TOMACS) 8 (1) (1998) 3–30.
 */
-#pragma once
 
 #define RNG32
 
@@ -22,10 +21,11 @@ M. Matsumoto, T. Nishimura, Mersenne twister: a 623-dimensionally equidistribute
 /**
 State of MT19937 RNG.
 */
-typedef struct{
-	uint mt[MT19937_N]; /* the array for the state vector  */
-	int mti;
-} mt19937_state;
+// let pyro define this
+//typedef struct{ 
+//	uint mt[MT19937_N]; /* the array for the state vector  */
+//	int mti;
+//} mt19937_state;*/
 
 /**
 Generates a random 32-bit unsigned integer using MT19937 RNG.
