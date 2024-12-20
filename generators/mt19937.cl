@@ -26,6 +26,7 @@ State of MT19937 RNG.
 //	uint mt[MT19937_N]; /* the array for the state vector  */
 //	int mti;
 //} mt19937_state;*/
+#define mt19937_state PyroRNG
 
 /**
 Generates a random 32-bit unsigned integer using MT19937 RNG.
